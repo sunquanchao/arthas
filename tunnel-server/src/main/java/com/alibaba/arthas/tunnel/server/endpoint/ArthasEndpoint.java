@@ -9,8 +9,10 @@ import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
 import com.alibaba.arthas.tunnel.server.TunnelServer;
 import com.alibaba.arthas.tunnel.server.app.ArthasProperties;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Endpoint(id = "arthas")
+@CrossOrigin(origins = "*")
 public class ArthasEndpoint {
 
     @Autowired
