@@ -28,6 +28,9 @@ public class ArthasEndpoint {
         result.put("agents", tunnelServer.getAgentInfoMap());
         result.put("clientConnections", tunnelServer.getClientConnectionInfoMap());
 
+        result.put("code",200);
+        result.put("message","success");
+
         return result;
     }
 
