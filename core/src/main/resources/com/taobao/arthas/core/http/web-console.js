@@ -99,7 +99,7 @@ function startConnect (silent) {
         return;
     }
     if (ws != null) {
-        alert('Already connected');
+        alert('Already connected,if there is still error,please reattach the pid !');
         return;
     }
     // init webSocket
